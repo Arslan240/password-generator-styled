@@ -26,6 +26,9 @@ const PasswordContainer = styled.div`
             border-radius: 10px;
             padding: 7px 10px;
             margin-right: 10px;
+            .password-span{
+                margin-right: 15px;
+            }
         }
         .button {
             box-sizing: border-box;
@@ -99,7 +102,7 @@ const Copy = () => {
         <PasswordContainer>
             <div className="inner-container">
                 <div className="password">
-                    <span>
+                    <span className='password-span'>
                         {password}
                     </span>
                     <GrRefresh className='refresh-icon icon' onClick={handleRefresh} />
